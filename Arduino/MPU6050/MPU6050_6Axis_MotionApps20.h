@@ -295,7 +295,7 @@ const unsigned char dmpConfig[MPU6050_DMP_CONFIG_SIZE] PROGMEM = {
     0x04,   0x09,   0x04,   0x87, 0x2D, 0x35, 0x3D,   // FCFG_5 inv_set_bias_update
     0x00,   0xA3,   0x01,   0x00,                     // D_0_163 inv_set_dead_zone
                  // SPECIAL 0x01 = enable interrupts
-    0x00,   0x00,   0x00,   0x01, // SET INT_ENABLE at i=22, SPECIAL INSTRUCTION
+    0x00,   0x00,   0x01,   0x01, // SET INT_ENABLE at i=22, SPECIAL INSTRUCTION
     0x07,   0x86,   0x01,   0xFE,                     // CFG_6 inv_set_fifo_interupt
     0x07,   0x41,   0x05,   0xF1, 0x20, 0x28, 0x30, 0x38, // CFG_8 inv_send_quaternion
     0x07,   0x7E,   0x01,   0x30,                     // CFG_16 inv_set_footer
